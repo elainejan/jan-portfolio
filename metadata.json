@@ -1,0 +1,6 @@
+{
+  "name": "Design & Frontend Portfolio",
+  "description": "An interactive, high-fidelity portfolio displaying digital experiences that bridge design precision and frontend code.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
