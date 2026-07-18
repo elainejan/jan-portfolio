@@ -141,31 +141,31 @@ export default function App() {
           </div>
 
           <div className="md:col-span-4 flex justify-start md:justify-center">
-            <div className="flex space-x-5 text-xs text-muted font-mono" role="navigation" aria-label="Footer navigation">
+            <div className="flex flex-wrap gap-x-5 gap-y-2 text-xs text-muted font-mono" role="navigation" aria-label="Footer navigation">
               <button
                 onClick={() => setActiveTab('about')}
-                className="hover:text-foreground transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-brand-light focus-visible:outline-none rounded px-1"
+                className="hover:text-foreground transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-brand-light focus-visible:outline-none rounded px-1 whitespace-nowrap"
                 aria-label="View Philosophy and About page"
               >
                 Philosophy
               </button>
               <button
                 onClick={() => setActiveTab('experience')}
-                className="hover:text-foreground transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-brand-light focus-visible:outline-none rounded px-1"
+                className="hover:text-foreground transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-brand-light focus-visible:outline-none rounded px-1 whitespace-nowrap"
                 aria-label="View Career Timeline page"
               >
                 Timeline
               </button>
               <button
                 onClick={() => setActiveTab('projects')}
-                className="hover:text-foreground transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-brand-light focus-visible:outline-none rounded px-1"
+                className="hover:text-foreground transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-brand-light focus-visible:outline-none rounded px-1 whitespace-nowrap"
                 aria-label="View Projects Case Studies page"
               >
                 Case Studies
               </button>
               <button
                 onClick={() => setActiveTab('contact')}
-                className="hover:text-foreground transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-brand-light focus-visible:outline-none rounded px-1"
+                className="hover:text-foreground transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-brand-light focus-visible:outline-none rounded px-1 whitespace-nowrap"
                 aria-label="View Connect and Contact page"
               >
                 Connect
