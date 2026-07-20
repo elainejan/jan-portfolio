@@ -238,21 +238,25 @@ export default function ProjectsView({ selectedProject, setSelectedProject }: Pr
 
               {/* Action Buttons in footer */}
               <div className="pt-6 border-t border-border mt-auto flex items-center space-x-4">
-                <a
-                  id="drawer-live-btn"
-                  href="https://example.com"
-                  target="_blank"
-                  referrerPolicy="no-referrer"
-                  className="flex-1 py-2.5 px-4 rounded-lg bg-foreground hover:bg-foreground/90 text-background text-xs font-semibold tracking-wide transition-colors text-center flex items-center justify-center space-x-2 cursor-pointer focus-visible:ring-2 focus-visible:ring-brand-light focus-visible:outline-none"
-                  aria-label={`Launch live demo for ${selectedProject.title}`}
-                >
-                  <span>Launch Live Demo</span>
-                  <ExternalLink className="w-3.5 h-3.5" aria-hidden="true" />
-                </a>
+                {selectedProject.link && (
+                  <a
+                    id="drawer-live-btn"
+                    href={selectedProject.link}
+                    target="_blank"
+                    referrerPolicy="no-referrer"
+                    className="flex-1 py-2.5 px-4 rounded-lg bg-foreground hover:bg-foreground/90 text-background text-xs font-semibold tracking-wide transition-colors text-center flex items-center justify-center space-x-2 cursor-pointer focus-visible:ring-2 focus-visible:ring-brand-light focus-visible:outline-none"
+                    aria-label={`Launch live demo for ${selectedProject.title}`}
+                  >
+                    <span>Launch Live Demo</span>
+                    <ExternalLink className="w-3.5 h-3.5" aria-hidden="true" />
+                  </a>
+                )}
                 <button
                   id="drawer-close-bottom"
                   onClick={() => setSelectedProject(null)}
-                  className="px-4 py-2.5 rounded-lg border border-border hover:border-brand-light/30 hover:bg-subtle-bg text-foreground/80 text-xs font-medium tracking-wide transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-brand-light focus-visible:outline-none"
+                  className={`px-4 py-2.5 rounded-lg border border-border hover:border-brand-light/30 hover:bg-subtle-bg text-foreground/80 text-xs font-medium tracking-wide transition-colors cursor-pointer focus-visible:ring-2 focus-visible:ring-brand-light focus-visible:outline-none ${
+                    selectedProject.link ? 'w-auto' : 'w-full text-center flex justify-center items-center'
+                  }`}
                 >
                   Close Case Specs
                 </button>
