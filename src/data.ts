@@ -1,6 +1,7 @@
 import { Project, ExperienceItem, Testimonial, SkillGroup } from './types';
 import profilePic from './assets/images/jan-profile.JPG';
 import profileTwo from './assets/images/profile-two.jpg';
+import apexGridMockup from './assets/images/apex_grid_mockup_1784545697530.jpg';
 
 export const HERO_IMAGE = profilePic;
 export const ABOUT_HERO_IMAGE = profilePic;
@@ -87,6 +88,22 @@ export const PROJECTS: Project[] = [
     tags: ["E-Commerce", "CSS Grid", "Fluid Transitions", "Interactive Filters"],
     category: "development",
     featured: true
+  },
+  {
+    id: "apex-grid-black",
+    title: "Apex Grid",
+    description: "An elegant, high-contrast dark dashboard illustrating dense grid aesthetics, real-time analytics widgets, and modular bento layout architecture.",
+    longDescription: "Apex Grid is an immersive, dark-themed bento dashboard built to demonstrate advanced grid-alignment systems and interactive data widgets. Engineered with a premium high-contrast monochrome color palette, the system includes modular card structures that dynamically adapt to screen real estate, displaying real-time rendering statistics, interactive control nodes, and custom chart matrices.",
+    image: apexGridMockup,
+    tags: ["React", "TypeScript", "Bento Grid", "High Contrast", "Apex Charts"],
+    category: "development",
+    featured: true,
+    link: "https://apex-grid-black.vercel.app/",
+    metrics: [
+      { label: "Rendering Rate", value: "120 FPS" },
+      { label: "Data Pipeline Latency", value: "< 10ms" },
+      { label: "Layout Grid Tiles", value: "16 Blocks" }
+    ]
   }
 ];
 
