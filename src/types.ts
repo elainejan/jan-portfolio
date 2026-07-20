@@ -8,6 +8,7 @@ export interface Project {
   category: 'design' | 'development' | 'hybrid';
   featured?: boolean;
   metrics?: { label: string; value: string }[];
+  link?: string;
 }
 
 export interface ExperienceItem {
