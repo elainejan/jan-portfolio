@@ -1,7 +1,7 @@
 import { Project, ExperienceItem, Testimonial, SkillGroup } from './types';
 import profilePic from './assets/images/jan-profile.JPG';
 import profileTwo from './assets/images/profile-two.jpg';
-import apexGridMockup from './assets/images/apex_grid_mockup_1784545697530.jpg';
+import apexGridMockup from './assets/images/apex_grid_screenshot_1784547021476.jpg';
 
 export const HERO_IMAGE = profilePic;
 export const ABOUT_HERO_IMAGE = profilePic;
