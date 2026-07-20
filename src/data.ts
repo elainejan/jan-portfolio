@@ -1,7 +1,7 @@
 import { Project, ExperienceItem, Testimonial, SkillGroup } from './types';
 import profilePic from './assets/images/jan-profile.JPG';
 import profileTwo from './assets/images/profile-two.jpg';
-import apexGridMockup from './assets/images/apex_grid_screenshot_1784547021476.jpg';
+import apexGridMockup from './assets/images/apex_telemetry_screenshot_1784550834114.jpg';
 
 export const HERO_IMAGE = profilePic;
 export const ABOUT_HERO_IMAGE = profilePic;
@@ -92,17 +92,17 @@ export const PROJECTS: Project[] = [
   {
     id: "apex-grid-black",
     title: "Apex Grid",
-    description: "An elegant, high-contrast dark dashboard illustrating dense grid aesthetics, real-time analytics widgets, and modular bento layout architecture.",
-    longDescription: "Apex Grid is an immersive, dark-themed bento dashboard built to demonstrate advanced grid-alignment systems and interactive data widgets. Engineered with a premium high-contrast monochrome color palette, the system includes modular card structures that dynamically adapt to screen real estate, displaying real-time rendering statistics, interactive control nodes, and custom chart matrices.",
+    description: "A precision F1 race telemetry cockpit showcasing real-time driver tracking, sector analysis, and a high-performance bento grid interface.",
+    longDescription: "Apex Grid (Telemetry Mapping) is an immersive, dark-themed bento-style cockpit built to demonstrate advanced telemetry mapping systems and interactive sports data widgets. Utilizing professional-grade track analytics, the application displays sector-dominance charts, drag indexes, and real-time racer metrics optimized for sub-millisecond updates.",
     image: apexGridMockup,
-    tags: ["React", "TypeScript", "Bento Grid", "High Contrast", "Apex Charts"],
+    tags: ["React", "TypeScript", "Bento Grid", "High Contrast", "Telemetry Data"],
     category: "development",
     featured: true,
     link: "https://apex-grid-black.vercel.app/",
     metrics: [
-      { label: "Rendering Rate", value: "120 FPS" },
-      { label: "Data Pipeline Latency", value: "< 10ms" },
-      { label: "Layout Grid Tiles", value: "16 Blocks" }
+      { label: "Update Latency", value: "< 150ms" },
+      { label: "Total Circuits", value: "24 Track Sets" },
+      { label: "Interactive Drivers", value: "20 Standings" }
     ]
   }
 ];
